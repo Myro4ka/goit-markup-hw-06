@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <header class="page-header">
       <div class="container">
@@ -446,15 +447,30 @@
         <form action="" class="application-form">
           <div class="form-field">
             <label for="name">Ім'я</label>
-            <input type="text" name="name" id="name" />
+            <div class="input-icon">
+              <input type="text" name="name" id="name" />
+              <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field">
             <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" />
+            <div class="input-icon">
+              <input type="tel" name="tel" id="tel" />
+              <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field">
             <label for="mail">Пошта</label>
-            <input type="email" name="mail" id="mail" />
+            <div class="input-icon">
+              <input type="email" name="mail" id="mail" />
+              <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
           <div class="form-field comment">
             <label for="comment">Коментар</label>
@@ -470,9 +486,8 @@
               name="license-agreement"
               value="license-agreement"
               id="license-agreement"
-              class="visually-hidden"
+              checked
             />
-            <!--checkbox -->
             <label for="license-agreement"
               >Погоджуюся з розсилкою та приймаю <a
                 href="#"

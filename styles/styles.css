@@ -399,6 +399,8 @@ img {
 .license-text::before {
   content: "";
   display: inline-block;
+  position: relative;
+  top: 3px;
   width: 16px;
   height: 15px;
   margin-right: 7px;
